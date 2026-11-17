@@ -20,6 +20,8 @@ class HomeController extends Controller
         // 5. Ambil list penerbit unik untuk opsi dropdown filter
         // 6. Return view 'home' dengan data buku dan list penerbit
 
+        
+
         $buku = Buku::paginate(8);
         $listPenerbit = collect();
 
